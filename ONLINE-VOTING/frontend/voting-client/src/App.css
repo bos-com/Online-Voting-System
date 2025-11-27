@@ -1,0 +1,59 @@
+/* App.css - Additional custom styles that complement Tailwind */
+
+.app-container {
+  @apply min-h-screen bg-gray-100;
+}
+
+.home-page {
+  @apply flex flex-col items-center justify-center min-h-screen p-4;
+}
+
+.home-card {
+  @apply bg-white shadow-xl rounded-lg p-8 max-w-md w-full text-center;
+}
+
+.home-title {
+  @apply text-3xl font-bold text-teal-800 mb-4;
+}
+
+.home-description {
+  @apply text-gray-600 mb-8;
+}
+
+.login-link {
+  @apply btn-primary inline-block;
+}
+
+/* Dashboard styles */
+.dashboard-header {
+  @apply text-2xl font-bold text-teal-800 mb-6;
+}
+
+/* Utility classes */
+.text-center {
+  @apply text-center;
+}
+
+.mb-4 {
+  @apply mb-4;
+}
+
+.mt-4 {
+  @apply mt-4;
+}
+
+.p-4 {
+  @apply p-4;
+}
+
+.text-success {
+  @apply text-green-600;
+}
+
+.text-warning {
+  @apply text-yellow-600;
+}
+
+.text-error {
+  @apply text-red-600;
+}

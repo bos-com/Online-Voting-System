@@ -1,0 +1,49 @@
+### Test 1 Voter Registration
+POST http://localhost:8080/api/v1/voters/register
+Content-Type: application/json
+
+{
+    "firstName": "mayambala",
+    "lastName": "cairo",
+    "email": "cairomayambala@gmail.com",
+    "universityId": "25/BCE/BU/R/0008",
+    "passwordHash": "#####*"
+}
+### Test 2.1: Create New Election
+# Election ID 2 will be created
+POST http://localhost:8080/api/v1/elections
+Content-Type: application/json
+
+{
+    "name": "Schools Presidents 2026",
+    "description": "The main election for School Presidents.",
+    "start_time": "2026-05-01T09:00:00",
+    "end_time": "2026-05-02T17:00:00",
+    "status": "SCHEDULED"
+}
+
+### Test 2.2: Get All Elections
+GET http://localhost:8080/api/v1/elections
+
+### Test 1.4: Update Election Status to OPEN
+PUT http://localhost:8080/api/v1/elections
+Content-Type: application/json
+
+{
+    "name": "Guild President 2026",
+    "description": "The main election for Guild President.",
+    "start_time": "2026-05-01T09:00:00",
+    "end_time": "2026-05-02T17:00:00",
+    "status": "OPEN"
+}
+### Test: Create Candidate 1
+POST http://localhost:8080/api/v1/candidates
+Content-Type: application/json
+
+{
+    "voter": { "id": 1 }, 
+    "elections": { "electionId": 1 }, 
+    "post": "GUILD PRESIDENT",
+    "bio": "PROTECT THE GAINS - Focus on welfare and sports programs.",
+    "approved": true
+}

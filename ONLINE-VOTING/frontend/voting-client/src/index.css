@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #004d40;
+  --secondary-color: #00796b;
+  --accent-color: #00bcd4;
+  --light-color: #e0f2f1;
+  --dark-color: #001f1a;
+  --warning-color: #f44336;
+  --success-color: #4caf50;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Button variants */
+.btn-primary {
+  /* csshint-disable-next-line */
+  @apply bg-teal-800 hover:bg-teal-900 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-secondary {
+  /* csshint-disable-next-line */
+  @apply bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-danger {
+  /* csshint-disable-next-line */
+  @apply bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-success {
+  /* csshint-disable-next-line */
+  @apply bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.btn-outline {
+  /* csshint-disable-next-line */
+  @apply border border-teal-800 text-teal-800 hover:bg-teal-800 hover:text-white font-bold py-2 px-4 rounded;
+}
+
+/* Card styles */
+.card {
+  /* csshint-disable-next-line */
+  @apply bg-white shadow-md rounded-lg p-6 mb-6;
+}
+
+.card-header {
+  /* csshint-disable-next-line */
+  @apply border-b border-gray-200 pb-3 mb-4;
+}
+
+/* Form styles */
+.form-group {
+  /* csshint-disable-next-line */
+  @apply mb-4;
+}
+
+.form-label {
+  /* csshint-disable-next-line */
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.form-input {
+  /* csshint-disable-next-line */
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent;
+}
+
+.form-select {
+  /* csshint-disable-next-line */
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-transparent;
+}
+
+/* Alert styles */
+.alert {
+  /* csshint-disable-next-line */
+  @apply p-4 rounded mb-4;
+}
+
+.alert-error {
+  /* csshint-disable-next-line */
+  @apply bg-red-100 border border-red-400 text-red-700;
+}
+
+.alert-success {
+  /* csshint-disable-next-line */
+  @apply bg-green-100 border border-green-400 text-green-700;
+}
+
+.alert-warning {
+  /* csshint-disable-next-line */
+  @apply bg-yellow-100 border border-yellow-400 text-yellow-700;
+}
+
+/* Navigation styles */
+.navbar {
+  /* csshint-disable-next-line */
+  @apply bg-teal-800 text-white shadow-md;
+}
+
+.nav-link {
+  /* csshint-disable-next-line */
+  @apply text-white hover:bg-teal-900 px-3 py-2 rounded-md text-sm font-medium;
+}
+
+.nav-link-active {
+  /* csshint-disable-next-line */
+  @apply bg-teal-900;
+}
+
+/* Layout styles */
+.main-layout {
+  /* csshint-disable-next-line */
+  @apply flex;
+}
+
+.sidebar {
+  /* csshint-disable-next-line */
+  @apply w-64 bg-teal-700 text-white min-h-screen;
+}
+
+.content {
+  /* csshint-disable-next-line */
+  @apply flex-1 p-6;
+}
+
+/* Table styles */
+table.data-table {
+  /* csshint-disable-next-line */
+  @apply min-w-full bg-white shadow-md rounded;
+}
+
+table.data-table th {
+  /* csshint-disable-next-line */
+  @apply bg-teal-800 text-white font-semibold py-2 px-4 text-left;
+}
+
+table.data-table td {
+  /* csshint-disable-next-line */
+  @apply py-2 px-4 border-b border-gray-200;
+}
+
+table.data-table tr:hover {
+  /* csshint-disable-next-line */
+  @apply bg-teal-50;
+}
