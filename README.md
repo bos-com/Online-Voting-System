@@ -1,4 +1,4 @@
-# 🗳️ Online Voting System
+# 🗳️ ONLINE VOTING SYSTEM
 
 ##  Project Overview
 
